@@ -38,18 +38,26 @@ nav {
   left:0px;
   background: #eee;
   width:100%;
+
   
-  
+}
+
+nav ul {
+  list-style-type:none;
+  text-align:center;
+}
+nav li {
+  display:inline-block;
 }
 nav a {
   text-decoration: none;
   color: black;
-  display:block;
-  float:right;
+  /* display:block; */
+  /* float:right; */
+  
   
   padding:1.7rem;
-  
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 #projects {
