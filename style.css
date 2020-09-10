@@ -66,6 +66,7 @@ nav a {
  text-align:center;
   padding-top: 5px;
   padding-bottom: 5px;
+  height:75vh;
 
   
 }
@@ -108,6 +109,7 @@ nav a {
 
 #contact {
   text-align:center;
+  height:75vh;
 }
 
 
