@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth;
+}
 #wrapper {
   font-size: 1.2rem;
   font-family: Helvetica;
@@ -7,7 +9,7 @@
 #welcome-section {
   display: flex;
   flex-direction:column;
-  height: 100vh;
+  height: 75vh;
   width: 100vw;
   align-items:center;
   justify-content:center;
@@ -16,14 +18,18 @@
 }
 #welcome-section a {
     text-decoration:none;
-    border: 2px solid black;
+    /* border: 2px solid black;
     color: black;
-  padding: 5px;
+  padding: 5px; */
 }
 
 #description {
   margin-left: 25vw;
   margin-right: 25vw;
+}
+
+#main {
+  display:flex;
 }
 
 nav {
@@ -74,28 +80,23 @@ nav a {
   background-color: white;
   padding-left:10px;
   padding-right:10px;
-  text-decoration: none;
+  text-decoration:none;
   
+  color:black;
 }
 
-/* 
-.project-tile a {
-   transition: color 1s;
-    text-decoration: none;
-  color:black;
-  
-  
-} */
+#projects a:hover{
+  transition: 0.3s;
+
+  background-color: #bec0c4;
+}
+
 
 .project-image {
   height:70%;
   width:85%;
   padding-bottom: 5px;
 }
-
-/* .project-tile a : hover {
-  color: white;
-} */
 
 #contact {
   text-align:center;
