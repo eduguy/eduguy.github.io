@@ -82,6 +82,12 @@ nav a {
     text-decoration: none;
   color:black;
   
+  
+}
+
+.project-image {
+  height:75%;
+  width:90%;
 }
 
 /* .project-tile a : hover {
