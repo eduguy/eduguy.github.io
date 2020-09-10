@@ -76,18 +76,18 @@ nav a {
   
 }
 
-
+/* 
 .project-tile a {
    transition: color 1s;
     text-decoration: none;
   color:black;
   
   
-}
+} */
 
 .project-image {
-  height:75%;
-  width:90%;
+  height:20vh;
+  width:20vw;
 }
 
 /* .project-tile a : hover {
