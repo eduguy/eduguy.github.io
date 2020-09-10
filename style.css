@@ -1,6 +1,6 @@
 
 #wrapper {
-  font-size: 1.0rem;
+  font-size: 1.2rem;
   font-family: Helvetica;
 }
 
@@ -21,7 +21,10 @@
   padding: 5px;
 }
 
-
+#description {
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
 
 nav {
   position:fixed;
@@ -67,6 +70,8 @@ nav a {
   max-width: 18%;
   text-align: center;
   background-color: white;
+  padding-left:10px;
+  padding-right:10px;
 
 }
 .project-tile a {
@@ -81,8 +86,7 @@ nav a {
 } */
 
 #contact {
-  display:flex;
-  justify-content:center;
+  text-align:center;
 }
 
 
