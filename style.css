@@ -9,7 +9,7 @@ html {
 #welcome-section {
   display: flex;
   flex-direction:column;
-  height: 92vh;
+  height: 100vh;
   width: 100vw;
   align-items:center;
   justify-content:center;
@@ -37,7 +37,7 @@ nav {
   top:0px;
   left:0px;
   background: #eee;
-  width:100%;
+  width:100vw;
   height:8vh;
   
   
@@ -76,7 +76,8 @@ nav a {
 
 #tiles {
 
-    display:flex;
+
+  display:flex;
   justify-content:center;
 }
 
@@ -87,8 +88,6 @@ nav a {
   display:flex;
   flex-direction:column;
   width: 25%;
-  text-align: center;
-  align-content: center;
 
   background-color: white;
   padding-left:10px;
@@ -96,9 +95,13 @@ nav a {
   text-decoration:none;
   
   color:black;
+  overflow:auto;
+
+
 
   
 }
+
 
 #projects a:hover{
   transition: 0.3s;
@@ -111,12 +114,16 @@ nav a {
   height:70%;
   width:85%;
   padding-bottom: 5px;
+
+
 }
 
 #contact {
+  background-color: azure;
   padding-top:8vh;
   text-align:center;
   height:92vh;
+  width: 100vw;
 }
 
 
