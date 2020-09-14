@@ -1,5 +1,12 @@
 html {
   scroll-behavior: smooth;
+  margin:0;
+  padding:0;
+}
+
+body {
+  margin:0;
+  padding:0;
 }
 #wrapper {
   font-size: 1.2rem;
@@ -53,12 +60,17 @@ nav li {
 nav a {
   text-decoration: none;
   color: black;
-  /* display:block; */
-  /* float:right; */
+
   
-  
-  padding:1.7rem;
+  border-bottom: 2px solid transparent;
+  transition:  .5s;
+  padding-left:1.7rem;
+  padding-right:1.7rem;
+
   font-size: 1.5rem;
+}
+nav a:hover {
+  border-color:black;
 }
 
 #projects {
@@ -66,10 +78,10 @@ nav a {
  background-image: linear-gradient(to right, #bec0c4 , #324ea8);
  text-align:center;
   padding-top: 8vh;
-  padding-bottom: 5px;
   height:92vh;
 
-  
+    overflow:auto;
+
 
   
 }
@@ -97,6 +109,7 @@ nav a {
   color:black;
   overflow:auto;
 
+  transition: background-color 0.5s ease;
 
 
   
@@ -104,7 +117,7 @@ nav a {
 
 
 #projects a:hover{
-  transition: 0.3s;
+  transition: 0.5s;
 
   background-color: #bec0c4;
 }
@@ -124,6 +137,17 @@ nav a {
   text-align:center;
   height:92vh;
   width: 100vw;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #324ea8;
+  border-bottom: 2px solid transparent;
+  transition:  .5s;
+}
+
+#contact a:hover {
+  border-color: black;
 }
 
 
