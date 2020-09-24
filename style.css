@@ -2,6 +2,8 @@ html {
   scroll-behavior: smooth;
   margin:0;
   padding:0;
+  overflow-x: hidden;
+
 }
 
 body {
@@ -10,7 +12,7 @@ body {
 }
 #wrapper {
   font-size: 1.2rem;
-  font-family: Helvetica;
+  font-family: Helvetica, Arial;
 }
 
 #welcome-section {
@@ -18,18 +20,22 @@ body {
   flex-direction:column;
   height: 100vh;
   width: 100vw;
+  /* margin-top:8vh; */
   align-items:center;
   justify-content:center;
    /* background-image: linear-gradient(to right, white , #ADD8E6); */
   background-color: #ADD8E6;
   
 }
-/* #welcome-section a {
+#welcome-section a {
     text-decoration:none;
-    /* border: 2px solid black;
-    color: black;
-  padding: 5px; */
-} */
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
+}
+
+#welcome-section a:hover {
+  border-color:black;
+}
 
 #welcome-section h1 {
   margin-bottom:10vh;
@@ -45,6 +51,7 @@ body {
 #description {
   display:flex;
   background-color: azure;
+  overflow:auto;
 
 }
 #descriptionLeft {
@@ -59,21 +66,26 @@ body {
 #main {
   display:flex;
 }
-
+/* header {
+  display:flex;
+} */
 nav {
   position:fixed;
   top:0px;
   left:0px;
   background: #eee;
-  width:100vw;
+  width:100%;
   height:8vh;
-  
-  
+  margin: 0;
+  padding: 0;
+  /* display:none; */
+  /* display:inline-block; */
 }
 
 nav h1 {
-  display: inline-block;
+  /* display: inline-block; */
 }
+
 nav ul {
   list-style-type:none;
   text-align:center;
@@ -81,17 +93,18 @@ nav ul {
 }
 nav li {
   display:inline;
-  /* vertical-align: middle; */
+  vertical-align: middle;
 
 }
 nav a {
+  /* float:right;
+  display:block; */
   text-decoration: none;
   color: black;
   border-bottom: 2px solid transparent;
   transition:  .5s;
   padding-left:1.7rem;
   padding-right:1.7rem;
-
   font-size: 1.5rem;
 }
 nav a:hover {
@@ -101,7 +114,8 @@ nav a:hover {
 #projects {
  width:100vw;
  /* background-image: linear-gradient(to right, #bec0c4 , #324ea8); */
- background-color: #ADD8E6;
+ background-color: antiquewhite;
+ /* background-color: white; */
  text-align:center;
   padding-top: 8vh;
   height:92vh;
@@ -183,5 +197,8 @@ nav a:hover {
   border-color: black;
 }
 
-
-
+@media (max-width: 1000px) {
+  nav {
+    display:none;
+  }
+}
