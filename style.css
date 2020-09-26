@@ -13,7 +13,8 @@ body {
   padding:0;
 }
 #wrapper {
-  font-size: 1.35em;
+  /* font-size: 1.35em; */
+  font-size: calc(.85em + .4vw);
   font-family: 'Lato', Helvetica, Arial;
 }
 
@@ -42,24 +43,26 @@ body {
 
 
 .description {
-  padding:3%;
-  width:30vw;
+  /* padding:3%;
+  width:30vw; */
   /* display:flex; */
   /* align-content: center; */
 }
 
 #description {
+  padding:3%;
   display:flex;
   background-color: azure;
   overflow:auto;
+  width:1100px;
 
 }
 #descriptionLeft {
-  margin-right: 4vw;
+  padding-right: 4vw;
 }
 
 #descriptionRight {
-  margin-left: 4vw;
+  padding-left: 4vw;
 }
 
 
@@ -81,11 +84,12 @@ header {
   display: flex;
   align-items: center;
   padding:2%;
+  padding-left: 3%;
   width: 60vw;
 }
 
 #name h1 {
-  font-size:2em;
+  /* font-size:2em; */
 }
 
 #name a {
@@ -127,7 +131,7 @@ nav a {
   transition:  .5s;
   /* padding-left:1.7rem; */
   padding-right:1.8rem;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 nav a:hover {
   border-color:black;
@@ -222,5 +226,28 @@ nav a:hover {
 @media (max-width: 1025px) {
   #welcome-section h1 {
     display: none;
+  }
+}
+
+@media (max-width: 1250px) {
+  #description {
+    width: 750px;
+  }
+}
+
+@media (max-width: 900px) {
+  #description {
+    width: 550px;
+  }
+}
+
+@media (max-width: 600px) {
+  #description {
+    width:400px;
+    flex-direction: column;
+  }
+
+  #descriptionRight {
+    padding:0
   }
 }
