@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
 html {
   scroll-behavior: smooth;
   margin:0;
@@ -11,8 +13,8 @@ body {
   padding:0;
 }
 #wrapper {
-  font-size: 1.2rem;
-  font-family: Helvetica, Arial;
+  font-size: 1.35em;
+  font-family: 'Lato', Helvetica, Arial;
 }
 
 #welcome-section {
@@ -38,9 +40,6 @@ body {
   border-color:black;
 }
 
-#welcome-section h1 {
-  /* margin-bottom:5vh; */
-}
 
 .description {
   padding:3%;
@@ -67,44 +66,68 @@ body {
 #main {
   display:flex;
 }
-/* header {
+
+header {
   display:flex;
-} */
-nav {
+  width:100%;
   position:fixed;
   top:0px;
   left:0px;
   background: #eee;
-  width:100%;
   height:8vh;
-  margin: 0;
-  padding: 0;
-  /* display:none; */
-  /* display:inline-block; */
 }
 
+#name {
+  display: flex;
+  align-items: center;
+  padding:2%;
+  width: 60vw;
+}
 
+#name h1 {
+  font-size:2em;
+}
+
+#name a {
+  text-decoration: none;
+  padding-left: 3%;
+  border-bottom: 2px solid transparent;
+  transition: .5s;
+}
+#name a:hover {
+  border-color: black;
+}
+
+nav {
+  align-content: flex-end;
+  width:100%;
+
+}
 
 nav ul {
   list-style-type:none;
-  text-align:center;
+  text-align: end;
+  align-content: flex-end;
   /* top:4vh; */
 }
 nav li {
+  align-content: flex-end;
+
   display:inline;
   vertical-align: middle;
 
 }
 nav a {
-  /* float:right;
-  display:block; */
+
+  display: block;
+  float:right;
   text-decoration: none;
   color: black;
   border-bottom: 2px solid transparent;
   transition:  .5s;
-  padding-left:1.7rem;
-  padding-right:1.7rem;
-  font-size: 1.5rem;
+  /* padding-left:1.7rem; */
+  padding-right:1.8rem;
+  font-size: 1.3em;
 }
 nav a:hover {
   border-color:black;
@@ -196,8 +219,8 @@ nav a:hover {
   border-color: black;
 }
 
-@media (max-width: 1000px) {
-  nav {
-    display:none;
+@media (max-width: 1025px) {
+  #welcome-section h1 {
+    display: none;
   }
 }
